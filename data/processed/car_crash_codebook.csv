@@ -1,0 +1,64 @@
+variables,desciption
+crash_record_id,"character, This number can be used to link to the same crash in the Vehicles and People datasets. This number also serves as a unique ID in this dataset."
+crash_date_est_i,"character, 	
+Crash date estimated by desk officer or reporting party (only used in cases where crash is reported at police station days after the crash)"
+crash_date,"character, 	
+Date and time of crash as entered by the reporting officer"
+posted_speed_limit,"double, Posted speed limit, as determined by reporting officer"
+traffic_control_device,"factor, Traffic control device present at crash location, as determined by reporting officer"
+device_condition,"factor, 	
+Condition of traffic control device, as determined by reporting officer"
+weather_condition,"factor: 	
+Weather condition at time of crash, as determined by reporting officer"
+lighting_condition,"factor, Light condition at time of crash, as determined by reporting officer"
+first_crash_type,"factor, Type of first collision in crash"
+trafficway_type,"character, 	
+Trafficway type, as determined by reporting officer"
+lane_cnt,"double, Total number of through lanes in either direction, excluding turn lanes, as determined by reporting officer (0 = intersection)"
+alignment,"character, Street alignment at crash location, as determined by reporting officer"
+roadway_surface_cond,"character, 	
+Road surface condition, as determined by reporting officer"
+road_defect,"character, Road defects, as determined by reporting officer"
+report_type,"character, 	
+Administrative report type (at scene, at desk, amended)."
+crash_type,"character, A general severity classification for the crash. Can be either Injury and/or Tow Due to Crash or No Injury / Drive Away"
+intersection_related_i,"character, 	
+Whether the crash begun or first contact was made outside of the public right-of-way."
+not_right_of_way_i,"character, Crash did/did not involve a driver who caused the crash and fled the scene without exchanging information and/or rendering aid"
+hit_and_run_i,"character, 	
+A field observation of estimated damage."
+damage,"character, Calendar date on which police were notified of the crash"
+date_police_notified,"character, The factor which was most significant in causing the crash, as determined by officer judgment"
+prim_contributory_cause,"character, The factor which was second most significant in causing the crash, as determined by officer judgment"
+sec_contributory_cause,"double, Street address number of crash location, as determined by reporting officer"
+street_no,"character, Street address direction (N,E,S,W) of crash location, as determined by reporting officer"
+street_direction,"factor, Street address name of crash location, as determined by reporting officer"
+street_name,"double, Chicago Police Department Beat ID. Boundaries available at https://data.cityofchicago.org/d/aerh-rz74"
+beat_of_occurrence,"character, Whether the Chicago Police Department took photos at the location of the crash."
+photos_taken_i,"character,	
+Whether statements were taken from unit(s) involved in crash."
+statements_taken_i,"character, Whether crash involved a motor vehicle occupant opening a door into the travel path of a bicyclist, causing a crash"
+dooring_i,"character, Whether the crash occurred in an active work zonel"
+work_zone_i,"character, The type of work zone, if any"
+work_zone_type,"character, Whether construction workers were present in an active work zone at crash location"
+workers_present_i,"double, Number of units involved in the crash. A unit can be a motor vehicle, a pedestrian, a bicyclist, or another non-passenger roadway user. Each unit represents a mode of traffic with an independent trajectory."
+num_units,"character, Most severe injury sustained by any person involved in the crash."
+most_severe_injury,"character, Total persons sustaining fatal, incapacitating, non-incapacitating, and possible injuries as determined by the reporting officer"
+injuries_fatal,"double,	
+Total persons sustaining fatal injuries in the crash"
+injuries_incapacitating,"double,	
+Total persons sustaining incapacitating/serious injuries in the crash as determined by the reporting officer. Any injury other than fatal injury, which prevents the injured person from walking, driving, or normally continuing the activities they were capable of performing before the injury occurred. Includes severe lacerations, broken limbs, skull or chest injuries, and abdominal injuries."
+injuries_non_incapacitating,"double, Total persons sustaining non-incapacitating injuries in the crash as determined by the reporting officer. Any injury, other than fatal or incapacitating injury, which is evident to observers at the scene of the crash. Includes lump on head, abrasions, bruises, and minor lacerations."
+injuries_reported_not_evident,"double, Total persons sustaining possible injuries in the crash as determined by the reporting officer. Includes momentary unconsciousness, claims of injuries not evident, limping, complaint of pain, nausea, and hysteria."
+injuries_no_indication,"double, 	
+Total persons sustaining no injuries in the crash as determined by the reporting officer"
+injuries_unknown,"double, Total persons for whom injuries sustained, if any, are unknown"
+crash_hour,"double, 	
+The hour of the day component of crash_date"
+crash_day_of_week,"double, 	
+The day of the week component of crash_date Sunday=1"
+crash_month,"double, The month component of crash_date"
+latitude,"double, The latitude of the crash location, as determined by reporting officer, as derived from the reported address of crash"
+longitude,"double, The longitude of the crash location, as determined by reporting officer, as derived from the reported address of crash"
+location,"character, The crash location, as determined by reporting officer, as derived from the reported address of crash, in a column type that allows for mapping and other geographic analysis in the data portal software"
+injuries_total_grouped,"character, total number of injuries grouped."

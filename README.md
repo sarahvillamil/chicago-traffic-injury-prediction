@@ -1,48 +1,36 @@
-## chicago-traffic-injury-prediction
-Multiclass classification of Chicago traffic crash injury severity using machine learning and R.
+## Chicago Car Crash Final Project 
 
-# Predicting Injury Severity in Chicago Traffic Crashes
-## Overview
-This project develops machine learning models to predict injury severity in Chicago traffic crashes based on roadway, environmental, and accident conditions.
- 
-Using over 1 million crash records from the Chicago Data Portal, I built multiclass classification models to predict whether a crash would result in no injuries, one injury, or two or more injuries.
- 
-## Tools
-- R
-- Tidymodels
-- Elastic Net
-- Random Forest
-- Boosted Trees
-- K-Nearest Neighbors
- 
-## Dataset
-- Chicago Traffic Crashes Dataset
-- 1,024,029 crash records
-- 48 original variables
-- Final modeling sample: 30,653 observations
- 
-## Methods
-- Stratified sampling
-- KNN imputation
-- Feature engineering
-- Interaction terms
-- Class balancing via downsampling
-- 5-fold cross-validation with 3 repeats
-- Hyperparameter tuning
- 
-## Results
-- Best model: Balanced Elastic Net
-- ROC-AUC: 0.741
-- Accuracy: 62.6%
-- Recall: 58.3%
-- Precision: 52.5%
- 
-## Key Findings
-- Balancing classes improved performance across all model families.
-- Elastic Net achieved the strongest overall performance.
-- Roadway, weather, traffic, and crash characteristics were informative predictors of injury severity.
- 
-## Repository Contents
-- Final Report
-- R Code
-- Figures and Visualizations
+This repository contains the classification model on Chicago Car Crash Data.
+
+## Repo Organization 
+
+### Sub-directories 
+
+-['data/'](data): contains all data for this project.
+-['memos/'](plot): contains all progress memos for this project.
+-['recipes/'](data): contains all recipes for this project.
+-['results/'](results): contains all results for this project
+-['splits/'](plot): contains all splits and folds.
+
+### R Scripts
+-   '01_EDA.r': EDA of data.
+-   '02_Initial_Set_Up.r': Initial set up: splitting and folding.
+-   '03_Recipes.r': Recipes code and set up.
+-   '04a_baseline_fit.r': Null fit.
+-   '04b_multinom_reg_fit.r': Multinomial regression fits.
+-   '04c_elastic_fit.r': Elastic net fits.
+-   '04d_knn_fit.r': Nearest neighbor fits.
+-   '04e_rf_fit.r': Random forest fits.
+-   '04f_bt_fit.r': Boosted tree fits.
+-   '05_model_comparison.r': Model comparison and analysis.
+-   '06_final_model_train.r': Final model trained and set workflow.
+-   '07_final_model_analysis.r': Final model analysis.
+
+### Reports
+-   'Villamil_Sarah_final_report.qmd': file for creating final report
+-   'Villamil_Sarah_final_report.html': rendered html for final report
+-   'Villamil_Sarah_executive_summary.qmd': file for creating executive summary
+-   'Villamil_Sarah_executive_summary.html': rendered html for executive summary
+
+
+
