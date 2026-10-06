@@ -2,7 +2,6 @@
 Multiclass classification of Chicago traffic crash injury severity using machine learning and R.
 
 # Predicting Injury Severity in Chicago Traffic Crashes
- 
 ## Overview
 This project develops machine learning models to predict injury severity in Chicago traffic crashes based on roadway, environmental, and accident conditions.
  
