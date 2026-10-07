@@ -1,9 +1,9 @@
 ## Repo Organization 
 ### Sub-directories 
--[data/](data): contains all data for this project.
--[recipes/](data): contains all recipes for this project.
--[results/](results): contains all results for this project
--[splits/](plot): contains all splits and folds.
+- [data/](data): contains all data for this project.
+- [recipes/](data): contains all recipes for this project.
+- [results/](results): contains all results for this project
+- [splits/](plot): contains all splits and folds.
 
 ### R Scripts
 -   '01_EDA.r': EDA of data.
